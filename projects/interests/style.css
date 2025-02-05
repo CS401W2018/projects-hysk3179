@@ -1,0 +1,31 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24pt;
+    color: rebeccapurple;
+    background-color: antiquewhite;
+
+}
+
+
+footer p {
+    color: #3399FF;
+}
+
+.explain {
+    color: blue;
+}
+.bigger {
+    font-size: 18pt;
+}
+#bolder{
+    color: red;
+}
+.green {
+    color: green;
+}
+.questions {
+    font-size: 14pt;
+}
+.questionsOne {
+    font-weight: bolder;
+}
