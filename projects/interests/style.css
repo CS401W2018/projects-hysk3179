@@ -3,12 +3,10 @@ body{
     font-size: 24pt;
     color: rebeccapurple;
     background-color: antiquewhite;
-
 }
 
-
 footer p {
-    color: #3399FF;
+    color: #2255FF;
 }
 
 .explain {
@@ -28,4 +26,22 @@ footer p {
 }
 .questionsOne {
     font-weight: bolder;
+}
+.answerOne {
+    font-weight: bolder;
+    color: brown;
+}
+.questionsTwo {
+    font-weight: lighter;
+}
+.answerTwo {
+    font-weight: lighter;
+    color: orange;
+}
+.questionsThree {
+    font-weight: 600;
+}
+.answerThree {
+    font-weight: 600;
+    color: green;
 }
