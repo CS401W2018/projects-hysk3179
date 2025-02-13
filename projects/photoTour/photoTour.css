@@ -6,19 +6,30 @@ body {
 }
 
 header {
-    background: url(SeoulMark.png) right no-repeat;
+    background: url(SeoulMark.png) right no-repeat ;
     /* background-image: url(SeoulMark.png);
     background-repeat: no-repeat;
     background-position: right; */
 }
 nav a {
     color:greenyellow;
+    
 
 }
+.mark {
+    color: blue;
+}
+
 .mylist {
     list-style-image: url(mark.png);
+    color: orange;
 }
-
+.content {
+   color: rgb(7, 214, 69); 
+}
 .current {
     color:aqua;
+}
+.blue {
+    width: 500px;
 }
