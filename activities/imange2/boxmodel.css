@@ -1,0 +1,46 @@
+/* block tag, inline tage
+block tag - wide tag / 100 % width
+ex of block tags - div, nav, header, h1~6, main,
+outhisde of box, there is margin. 
+boarder 
+in side, we have pdeeing (like inside margin).
+
+
+-------------------------------------------------
+Inline tags
+span, em, strogn, mark, phrase, 
+
+we can not put width, height, margin, pedding stuff
+
+
+pt(point) - font, text 
+px, in, cm - shape
+
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: burlywood;
+    width: 70%;/* on the desktop view, it will automatically chagned*/
+    /* margin: 100px; */
+    margin-bottom: 40px;
+    padding: 50px 25px 100px 0; /*top and bottom  right and left*/
+}
+header h1 {
+    border: 5px dashed #080;
+    padding: 3cm;
+    margin-top: 0;
+}
+
+.figwave{
+    width: 300px;
+    border: thin solid #000;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.figwave img {
+    width: 100%;
+}
