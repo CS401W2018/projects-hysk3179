@@ -28,6 +28,7 @@ header {
     margin-bottom: 40px;
     padding: 50px 25px 100px 0; /*top and bottom  right and left*/
 }
+
 header h1 {
     border: 5px dashed #080;
     padding: 3cm;
@@ -43,4 +44,10 @@ header h1 {
 
 .figwave img {
     width: 100%;
+}
+.boxa {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boxb {
+    color: #080;
 }
