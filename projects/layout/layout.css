@@ -1,22 +1,26 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
-    font-weight: 900;
+    font-weight: 900px;
     line-height: 1cm;
     text-align:center;
     text-transform:capitalize;
     text-shadow:#000;
     color: blue;
     background-image: url(backTransp.png);
+    background-clip: content-box;
+
     background-repeat: repeat;
+}
+footer {
+    background: url(koreanflight.jpg) right no-repeat ;
 }
 
 nav a {
     display: block;
     background-color: aqua;
-    paddng: 10px 5px;
-    border-bottom: thin solid #fff;
-   
+    padding: 10px 5px;
+    
 }
 
 nav a:hover {
@@ -24,10 +28,24 @@ nav a:hover {
 }
 
 
+#divide3 {
+    width: 800px;
+    height: 100%;
+    background-color: coral;
+    margin: 10px auto;
+    border: thin solid #000;
+    
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+    
+}
 .font1 {
     font-family:'Times New Roman', Times, serif;    
 }
-
+#font2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:brown;
+}
 
 .floating {
     float: right;
@@ -38,17 +56,19 @@ nav a:hover {
     top: 50px;
     left: 59px;
 }
+.Transportation {
+    width: 320px;
+    
+    border: thin solid #000;
+    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
+}
 .taxi2 {
     width: 350px;
     border: thin solid #000;
     box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 
-.bus {
-    width: 300px;
-    border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
-}
+
 .bus2 {
     width: 300px;
     border: thin solid #000;
@@ -60,34 +80,8 @@ nav a:hover {
     box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 
-.Transportation {
-    width: 250px;
-    border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
-}
-.taxi {
-    width: 250px;
-    border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
-}
-.bus {
-    width: 250px;
-    border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
-}
-.Subway {
-    width: 250px;
-    border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
-}
 .Airplane {
-    width: 250px;
+    width: 300px;
     border: thin solid #000;
     box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
-}
-.minicar img {
-    width: 100%;
-}
-.stop {
-    clear: both;
 }
