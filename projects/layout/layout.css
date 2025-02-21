@@ -16,6 +16,16 @@ nav a {
     background-color: aqua;
     paddng: 10px 5px;
     border-bottom: thin solid #fff;
+   
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+
+.font1 {
+    font-family:'Times New Roman', Times, serif;    
 }
 
 
@@ -27,6 +37,27 @@ nav a {
     position: fixed;
     top: 50px;
     left: 59px;
+}
+.taxi2 {
+    width: 350px;
+    border: thin solid #000;
+    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
+}
+
+.bus {
+    width: 300px;
+    border: thin solid #000;
+    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
+}
+.bus2 {
+    width: 300px;
+    border: thin solid #000;
+    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
+}
+.subway2 {
+    width: 300px;
+    border: thin solid #000;
+    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 
 .Transportation {
