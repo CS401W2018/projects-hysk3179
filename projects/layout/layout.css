@@ -1,15 +1,14 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size:x-large;
-    font-weight: 900px;
+    font-weight: 900;
     line-height: 1cm;
     text-align:center;
     text-transform:capitalize;
-    text-shadow:#000;
+    text-shadow: 2px 2px #000000;
     color: blue;
     background-image: url(backTransp.png);
     background-clip: content-box;
-
     background-repeat: repeat;
 }
 footer {
@@ -47,41 +46,26 @@ nav a:hover {
     color:brown;
 }
 
-.floating {
-    float: right;
-}
-
-.moving {
-    position: fixed;
-    top: 50px;
-    left: 59px;
-}
 .Transportation {
     width: 320px;
-    
     border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 .taxi2 {
     width: 350px;
     border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 
 
 .bus2 {
     width: 300px;
     border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 .subway2 {
     width: 300px;
     border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
 
 .Airplane {
     width: 300px;
     border: thin solid #000;
-    box-shadow: 5px, 5px, 5px, rgba(0,0,0,0,5);
 }
