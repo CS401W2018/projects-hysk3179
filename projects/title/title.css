@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    grid-template-columns: "header 
+                            left right";
+}
+header {
+    background-color:beige ;
+}
+nav {
+    display: flex;
+    background-color: bisque;
+    /* gap: 100px; */
+    justify-content: space-evenly;
+}
+nav a {
+    display: block;
+    background-color: aqua;
+    padding: 10px;
+}
+main {
+    grid-area: right;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "mom card";
+}
+aside {
+    grid-area: left;
+    display: block;
+    background-color: blueviolet;
+}
+
+.momo {
+    grid-area: mom;
+}
+.card {
+    grid-area: card;
+    display: flex;
+    flex-flow: row wrap; */
+
+}
+.taxi2 {
+    width: 225px;
+    border: thick solid #000;
+    border-radius: 5px;
+    box-shadow: 5px 10px;
+}
+.link {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
