@@ -49,3 +49,24 @@ nav a:hover{
 .card h3{
     background-color: red;
 }
+
+@media ONLY screen AND (max-width: 600px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card P{ 
+        width: 80%;
+    }
+    .feature {
+        order: -1;
+    }
+} 
+@media ONLY screen AND (max-width: 450px) {
+    nav {flex-direction: column;}
+
+    nav a {
+        border-radius: 0;
+        border-bottom: thin solid #FFF;
+    }
+}
