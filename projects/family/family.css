@@ -33,9 +33,13 @@ nav a:hover{
     display: grid;
     grid-template-columns: 30% 70%;     
 }
+img{
+    width: 100%;
+}
 .parent {
 
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -81,6 +85,13 @@ nav a:hover{
     .divide {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Left {
+        margin: 10px;
+        /* margin-left: 40px; */
+        /* justify-content: center; */
+        
     }
 
 }
