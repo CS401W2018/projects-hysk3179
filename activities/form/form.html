@@ -9,17 +9,20 @@
 <body>
     <header><h1>Web designer</h1></header>
     <main>
-        <form action="porcessing.html" method="post">
+        <form action="porcessing.html" method="get">
+            <fieldset>
+                <legend>Create Account</legend>
+                <div class="form-row">
+                    <label for="fname">Full name: </label>
+                    <input type="text" name="fullname" id="fname" value="Cho">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email" placeholder="your@gmail.com">
+                </div>
+     
             <div class="form-row">
-                <label for="fname">Full name : </label>
-                <input type="text" name="fullname" id="fname" value="Cho">
-            </div>
-            <div class="form-row">
-                <label for="email">Email: </label>
-                <input type="text" name="email" id="email" placeholder="your@gmail.com">
-            </div>
-            <div class="form-row">
-                <label for="password">Email: </label>
+                <label for="password">Password: </label>
                 <input type="password" name="password" id="password" required>
             </div>
             <div class="form-row">
@@ -35,23 +38,31 @@
                     <option value="GA">Goergia</option>
                 </select>
             </div>
-            <div class="">
-                <div>Year in School :</div>
+            <div class="radio-row">
+                <div class="form-spacer">Year in School :</div>
                 <label><input type="radio" name="year" value="freshmen">freshmen</label>
-                <label><input type="radio" name="year" value="sophomore">sophomore</label>
+                <label><input type="radio" name="year" value="sophomore" checked>sophomore</label>
                 <label><input type="radio" name="year" value="junior">junior</label>
                 <label><input type="radio" name="year" value="senior">senior</label>
             </div>
+            <div class="radio-row">
+                <div class="form-spacer"></div>
+                <label><input type="checkbox" name="remember" id="remember" checked>Remember Me</label>
+            </div>
             <div class="form-row">
+                <label for="comments">Comments:</label> 
+                <textarea name="comments" id="comments" placeholder="write something"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-spacer"></div>
                 <input type="submit">
             </div>
-            <b><p>The form tag has an "action" attribute. What does it do?</p></b>
-            <p>When people put it some data, it will go to the action field. where the form data will be sent for processing,</p>
-            <b><p>The form tag has a "method" attribute. What does it do?</p></b>
-            <p>depends on the method, people can hide or show their input.</p>
-            <b><p> What is the difference between a "POST" and a "GET"?</p></b>
-            <p>Post make it hide, and get make it to be seen.</p>
+            <b><p>What are different ways to style your form?</p></b>
+            <p>'.form-row input:not([type="submit"])'-> As you can see, You can control some specific location by using not([]). </p>
+            <b><p>Why does the professor like to use flex?</p></b>
+            <p>Because it is easier to control many items which are same children. It will apply to all the children at the same time.</p>
         </form>
+        </fieldset> 
     </main>
     <footer>
         <p>&copy; 2025 Hyunseok Cho</p>
