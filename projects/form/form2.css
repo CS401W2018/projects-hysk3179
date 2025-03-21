@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: red;
 }
 header {
     background-color: red;
@@ -9,10 +8,9 @@ header {
     font:bold;
 }
 footer {
-    background-color: red;
-    color: brown;
-    font-size: large;
-    font:bold;
+    background-color: purple;
+    color: white;
+    font-size: medium;
 }
 fieldset {
     background-color: aqua;

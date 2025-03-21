@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <header><h1>Web designer</h1></header>
+    <main>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Create Account</legend>
+                <div class="form-row">
+                    <label for="fname">Full name: </label>
+                    <input type="text" name="fullname" id="fname" placeholder="Cho">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email" placeholder="your@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="bday">DOB: </label>
+                    <input type="date" name="bday" id="bday" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="State">State</label>
+                    <select name="State" id="State">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="CA">California</option>
+                        <option value="UT">Utha</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AL">Alabama</option>
+                        <option value="GA">Goergia</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School :</div>
+                    <label><input type="radio" name="year" value="freshmen">freshmen</label>
+                    <label><input type="radio" name="year" value="sophomore">sophomore</label>
+                    <label><input type="radio" name="year" value="junior">junior</label>
+                    <label><input type="radio" name="year" value="senior">senior</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="remember" id="remember" checked>I am a BYUH Student currently.</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label> 
+                    <textarea name="comments" id="comments" placeholder="Tell about you"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset> 
+        </form>        
+    </main>
+    <footer>
+        <p>&copy; 2025 Hyunseok Cho</p>
+    </footer>
+</body>
+    
+    
+</html>
