@@ -33,6 +33,8 @@ legend {
     padding: 5px 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: bisque;
+    width: 200px;
+    border-radius: 15px;
 }
 
 .form-row input:not([type="submit"]):focus {
