@@ -9,12 +9,12 @@
 <body>
     <header><h1>Web designer</h1></header>
     <main>
-        <form action="porcessing.html" method="get">
+        <form action="porcessing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Create Account</legend>
                 <div class="form-row">
                     <label for="fname">Full name: </label>
-                    <input type="text" name="fullname" id="fname" value="Cho">
+                    <input type="text" name="fullname" id="fname">
                 </div>
                 <div class="form-row">
                     <label for="email">Email: </label>
@@ -23,7 +23,11 @@
      
             <div class="form-row">
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-row">
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age">
             </div>
             <div class="form-row">
                 <label for="State">State</label>
@@ -57,16 +61,48 @@
                 <div class="form-spacer"></div>
                 <input type="submit">
             </div>
-            <b><p>What are different ways to style your form?</p></b>
-            <p>'.form-row input:not([type="submit"])'-> As you can see, You can control some specific location by using not([]). </p>
-            <b><p>Why does the professor like to use flex?</p></b>
-            <p>Because it is easier to control many items which are same children. It will apply to all the children at the same time.</p>
+            <b><p>What is JavaScript? How did it get its name?</p></b>
+            <p> It enables developers to add functionality to websites without requiring the page to reload. The company had the java at that time. Therefore, for the business purposer, they made the name as JavaScript.</p>
+            <b><p>What are the two ways you can run JavaScript?</p></b>
+            <p>1. In the DOM (document of model) / 2. Node.js (Express.js) </p>
+            <b><p>What was the most popular front-end js library?</p></b>
+            <p>jQeury</p>
+            <b><p>What is the most popular front-end js library today?</p></b> 
+            <p>React.js</p>
         </form>
         </fieldset> 
     </main>
     <footer>
         <p>&copy; 2025 Hyunseok Cho</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            // alert("Form Submitted");
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
+            if(!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+            if (!age || !age <18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age,
+
+            }
+            console.log(formData);
+        })
+    </script>
 </body>
     
     
