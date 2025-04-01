@@ -2,7 +2,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: red;
     color: brown;
     font-size: large;
     font:bold;
@@ -13,7 +12,7 @@ footer {
     font-size: medium;
 }
 fieldset {
-    background-color: aqua;
+    background-color: lightgreen;
     border-radius: 5px;
 
 }
@@ -43,7 +42,7 @@ legend {
 
 .form-row input[type="submit"] {
     padding: 15px;
-    background-color: orange;
+    background-color: lightpink;
     color: white;
     font-size: 20px;
     border-radius: 5px;
