@@ -9,56 +9,61 @@
 <body>
     <header><h1>Web designer</h1></header>
     <main>
-        <form action="processing.html" method="get">
+        <div id="message"></div>
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
-                <legend>Create Account</legend>
+                <legend>Hotel Hyunseok</legend>
                 <div class="form-row">
                     <label for="fname">Full name: </label>
-                    <input type="text" name="fullname" id="fname" placeholder="Cho">
+                    <input type="text" name="fullname" id="fname" placeholder="Hyunseok Cho">
                 </div>
                 <div class="form-row">
                     <label for="email">Email: </label>
                     <input type="text" name="email" id="email" placeholder="your@gmail.com">
                 </div>
                 <div class="form-row">
-                    <label for="bday">DOB: </label>
-                    <input type="date" name="bday" id="bday" placeholder="mm/dd/yyyy">
+                    <label for="inday">Check-in Date: </label>
+                    <input type="date" name="inday" id="inday">
                 </div>
                 <div class="form-row">
-                    <label for="password">Password: </label>
+                    <label for="outday">Check-out Date: </label>
+                    <input type="date" name="outday" id="outday">
+                </div>
+                <div class="form-row">
+                    <label for="password">Confirmation password</label>
                     <input type="password" name="password" id="password" required>
                 </div>
                 <div class="form-row">
-                    <label for="State">State</label>
-                    <select name="State" id="State">
-                        <option value="blank" selected  ></option>
-                        <option value="CO">Colorado</option>
-                        <option value="CA">California</option>
-                        <option value="UT">Utha</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AL">Alabama</option>
-                        <option value="GA">Goergia</option>
+                    <label for="number">The number of guest</label>
+                    <select name="number" id="number">
+                        <option value="blank" selected>None</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="5">Five</option>
+                        <option value="6">Six</option>
+                        <option value="7">Seven</option>
                     </select>
                 </div>
                 <div class="radio-row">
-                    <div class="form-spacer">Year in School :</div>
-                    <label><input type="radio" name="year" value="freshmen">freshmen</label>
-                    <label><input type="radio" name="year" value="sophomore">sophomore</label>
-                    <label><input type="radio" name="year" value="junior">junior</label>
-                    <label><input type="radio" name="year" value="senior">senior</label>
+                    <div class="form-spacer">Additional Service :</div>
+                    <label><input type="radio" name="service" value="gym" id="gym">Gym</label>
+                    <label><input type="radio" name="service" value="sauna" id="sauna">Sauna</label>
+                    <label><input type="radio" name="service" value="dinner" id="dinner">Dinner Show</label>
+                    <label><input type="radio" name="service" value="none" id="none">None</label>
                 </div>
                 <div class="radio-row">
                     <div class="form-spacer"></div>
-                    <label><input type="checkbox" name="remember" id="remember" checked>I am a BYUH Student currently.</label>
+                    <label><input type="checkbox" name="remember" id="remember" checked>I want to have a breakfast.</label>
                 </div>
                 <div class="form-row">
                     <label for="comments">Comments:</label> 
-                    <textarea name="comments" id="comments" placeholder="Tell about you"></textarea>
+                    <textarea name="comments" id="comments" placeholder="Leave a comment if you need anything."></textarea>
                 </div>
                 <div class="form-row">
                     <div class="form-spacer"></div>
-                    <input type="submit">
+                    <input type="submit" id="submit">
                 </div>
             </fieldset> 
         </form>        
@@ -66,6 +71,7 @@
     <footer>
         <p>&copy; 2025 Hyunseok Cho</p>
     </footer>
+    <script src="form.js"></script>
 </body>
     
     
