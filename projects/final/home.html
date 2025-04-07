@@ -3,15 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
     <title>Homepage</title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <form class="container-fluid justify-content-start">
-          <button class="btn btn-outline-success me-2" type="button">Main button</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-        </form>
-      </nav>
-    
-</body>
+  <header>
+    <svg viewBox="0 0 500 200">
+      <path id="curve" d="M 50 150 Q 250 0 450 150" fill="transparent" />
+      <text>
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+          Cho's Family Tree
+        </textPath>
+      </text>
+    </svg>
+  </header>
+  <nav>
+    <a href="https://www.familysearch.org/en/blog/online-family-tree">About Family Tree</a>
+    <a href="https://en.wikipedia.org/wiki/Cho_(Korean_surname)">About Cho's Family</a>
+  </nav>
+  <div class="divide">
+    <aside class="Left">
+      <P><b>What is fmaily tree?</b></P>
+      <p>A family tree is a visual representation of an extended family, based on names, dates, places, and relationships. It shows how individuals are connected across different generations.</p>
+      <a href="https://www.familysearch.org/en/blog/online-family-tree">About Family tree</a>
+      <p>About Cho's family</p>
+      <p>Cho is one of Korean surnames.</p>
+      <a href="https://en.wikipedia.org/wiki/Cho_(Korean_surname)">About last name Cho in Korea</a>
+    </aside>
+    <div class="Right">
+      <table class="schedule">
+        <caption class="caption">In Korea, even after getting married, women do not take their husband's last name.</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Male</th>
+                <th>Female</th>
+                <th>Male</th>
+                <th>Female</th>
+                <th>Male</th>
+                <th>Female</th>
+                <th>Male</th>
+                <th>Female</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr class="three">
+            <td>3</td>
+              <td><a href="person1111.html">Donggon Cho(1111)</a></td>
+              <td><a href="person1110.html">Kim(1110)</a></td>
+              <td><a href="person1101.html">Jonngkuk Lee(1101)</a></td>
+              <td><a href="person1100.html">Sunyeo Lee(1100)</a></td>
+              <td><a href="person1011.html">Jaegu Moon(1011)</a></td>
+              <td><a href="person1010.html">Kim(1010)</a></td>
+              <td><a href="person1001.html">Yeongpyo Kim(1001)</a></td>
+              <td><a href="person1000.html">Seongrae Jeong(1000)</a></td>
+          </tr>
+          <tr class="two">
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td><a href="person111.html">Seunghoon Cho(111)</a></td>
+            <td><a href="person110.html">Hyosun Lee(110)</a></td>
+            <td><a href="person101.html">Jaesin Moon(101)</a></td>
+            <td><a href="person100.html">Inja Kim(100)</a></td>
+            <td></td>
+            <td></td>            
+          </tr>
+          <tr class="one">
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="person11.html">Yunkyu Cho(11)</a></td>
+            <td><a href="person10.html">Soonok Moon(10)</a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="zero">
+            <td>0</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="person1.html">Hyunseok Cho(1)</a></td>
+            <td></td>
+            <td></td>
+            <td></td>    
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="9">I use a simple code for my family tree: start with “1” for myself. Add “1” for male, “0” for female each generation up.</th>
+            </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <h1>Adding new Member</h1>
+  <div id="message"></div>
+    <form action="processing.html" method="post" id="myForm">
+        <fieldset>
+            <legend>Hotel Hyunseok</legend>
+            <div class="form-row">
+                <label for="fname">Full name: </label>
+                <input type="text" name="fname" id="fname" placeholder="Hyunseok Cho" required>
+            </div>
+            <div class="form-row">
+                <label for="TreeID">Family Tree ID: </label>
+                <input type="text" name="TreeID" id="TreeID" placeholder="KWYP-BQK">
+            </div>
+            <div class="form-row">
+                <label for="DOB">DOB: </label>
+                <input type="date" name="DOB" id="DOB">
+            </div>
+            <div class="form-row">
+                <label for="POB">Place of Birth: </label>
+                <input type="text" name="POB" id="POB">
+            </div>
+            <div class="form-row">
+                <label for="JOB">JOB</label>
+                <input type="text" name="JOB" id="JOB">
+            </div>
+            <div class="form-row">
+                <label for="number">Member of church</label>
+                <select name="number" id="number">
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                    <option value="3">Not sure</option>
+                </select>
+            </div>
+            <div class="radio-row">
+                <div class="form-spacer">Gender :</div>
+                <label><input type="radio" name="Gender" value="male" id="male">Male</label>
+                <label><input type="radio" name="Gender" value="female" id="female">Female</label>
+            </div>
+            <div class="radio-row">
+                <div class="form-spacer"></div>
+                <label><input type="checkbox" name="Living" id="Living" checked>Living</label>
+            </div>
+            <div class="form-row">
+                <label for="comments">Personal Story:</label> 
+                <textarea name="comments" id="comments" placeholder="Leave a short comment about this person."></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-spacer"></div>
+                <input type="submit" id="submit">
+            </div>
+        </fieldset> 
+    </form>
+  </body>
+  <footer>
+    <p>&copy; 2025 Hyunseok Cho</p>
+  </footer>
 </html>
