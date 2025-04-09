@@ -1,6 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(bigWave.jpg);
 }
+
 .wave {
     width: 600px;
+}
+
+.list {
+    list-style-image: url(favicon.ico);
 }
