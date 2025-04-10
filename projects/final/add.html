@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Add</title>
+</head>
+<body>
+    <h1>Adding new Member</h1>
+    <div id="message"></div>
+    <form action="processing.html" method="post" id="myForm">
+      <fieldset>
+          <legend>Hotel Hyunseok</legend>
+          <div class="form-row">
+              <label for="fname">Full name: </label>
+              <input type="text" name="fname" id="fname" placeholder="Hyunseok Cho" required>
+          </div>
+          <div class="form-row">
+              <label for="TreeID">Family Tree ID: </label>
+              <input type="text" name="TreeID" id="TreeID" placeholder="KWYP-BQK">
+          </div>
+          <div class="form-row">
+              <label for="DOB">DOB: </label>
+              <input type="date" name="DOB" id="DOB">
+          </div>
+          <div class="form-row">
+              <label for="POB">Place of Birth: </label>
+              <input type="text" name="POB" id="POB">
+          </div>
+          <div class="form-row">
+              <label for="JOB">JOB</label>
+              <input type="text" name="JOB" id="JOB">
+          </div>
+          <div class="form-row">
+              <label for="number">Member of church</label>
+              <select name="number" id="number">
+                  <option value="1">Yes</option>
+                  <option value="2">No</option>
+                  <option value="3">Not sure</option>
+              </select>
+          </div>
+          <div class="radio-row">
+              <div class="form-spacer">Gender :</div>
+              <label><input type="radio" name="Gender" value="male" id="Gender">Male</label>
+              <label><input type="radio" name="Gender" value="female" id="Gender">Female</label>
+          </div>
+          <div class="radio-row">
+              <div class="form-spacer"></div>
+              <label><input type="checkbox" name="Living" id="Living" checked>Living</label>
+          </div>
+          <div class="form-row">
+              <label for="comments">Personal Story:</label> 
+              <textarea name="comments" id="comments" placeholder="Leave a short comment about this person."></textarea>
+          </div>
+          <div class="form-row">
+              <div class="form-spacer"></div>
+              <input type="submit" id="submit">
+          </div>
+      </fieldset> 
+    </form>
+    <nav>
+        <a href="home.html">Go back</a>
+    </nav>
+    <footer>
+        <p>&copy; 2025 Hyunseok Cho</p>
+    </footer>
+    <script src="add.js"></script>
+</body>
+</html>
